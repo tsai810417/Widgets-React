@@ -1,0 +1,15 @@
+#clock-widget {
+  margin: 20px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#clock-info {
+  display: block;
+  margin: 10;
+
+}
