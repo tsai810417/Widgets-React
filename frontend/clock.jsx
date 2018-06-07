@@ -28,11 +28,13 @@ class ClockWidget extends React.Component {
     let zone = arr.slice(5,6).join(' ');
 
     return(
-      <div>
-        <h1>Clock</h1>
-        <h3>Date: { day }, { date }</h3>
-        <h3>Time: { time }</h3>
-        <h3>Zone: { zone }</h3>
+      <div id="clock-widget">
+        <h1 className='title'>Clock</h1>
+        <ul id="clock-info">
+          <li>Date: <p>{ day }, { date }</p></li>
+          <li>Time: <p>{ time }</p></li>
+          <li>Zone: <p>{ zone }</p></li>
+        </ul>
       </div>
     )
   }
