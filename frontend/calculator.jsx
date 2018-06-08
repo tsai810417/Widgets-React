@@ -6,6 +6,37 @@ class CalculatorWidet extends React.Component{
     this.handleClick = this.handleClick.bind(this);
     this.state = { num: 0, str: '' };
   }
+
+  componentDidMount(){
+    this.setState({
+      num: 0,
+      str: ''
+    })
+  }
+  render(){
+    return(
+      <div>
+        <h1>{this.state.num}</h1>
+        <button className='numbers' onClick={this.handleClick}>1</button>
+        <button className='numbers' onClick={this.handleClick}>2</button>
+        <button className='numbers' onClick={this.handleClick}>3</button>
+        <button className='numbers' onClick={this.handleClick}>4</button>
+        <button className='numbers' onClick={this.handleClick}>5</button>
+        <button className='numbers' onClick={this.handleClick}>6</button>
+        <button className='numbers' onClick={this.handleClick}>7</button>
+        <button className='numbers' onClick={this.handleClick}>8</button>
+        <button className='numbers' onClick={this.handleClick}>9</button>
+        <button className='numbers' onClick={this.handleClick}>0</button>
+        <button onClick={this.handleOp}>+</button>
+        <button onClick={this.handleOp}>-</button>
+        <button onClick={this.handleOp}>*</button>
+        <button onClick={this.handleOp}>/</button>
+        <button onClick={this.calculate}>=</button>
+
+      </div>
+    )
+  }
+
 }
 
 export default CalculatorWidet;
