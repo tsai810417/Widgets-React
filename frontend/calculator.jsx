@@ -13,6 +13,13 @@ class CalculatorWidet extends React.Component{
       str: ''
     })
   }
+  handleClick(e){
+    this.setState({
+      num: this.state.num.toString() + e.target.innerHTML
+
+    });
+  }
+
   render(){
     return(
       <div>
