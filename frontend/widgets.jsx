@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ClockWidget from './clock';
-import CalculatorWidet from './calculator'
+import CalculatorWidet from './calculator';
+import Tabs from './tabs';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
@@ -9,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div>
       <ClockWidget />
       <CalculatorWidet />
+      <Tabs />
     </div>
     , root);
 })
