@@ -24,15 +24,15 @@ class TabsWidget extends React.Component {
     let message = this.state.tabs[tabNum];
 
     return(
-      <div>
-        <ul>
+      <div id="tabs-widget">
+        <ul id="tabs-select">
           <li value="1" onClick={this.handleClick}>One</li>
           <li value="2" onClick={this.handleClick}>Two</li>
           <li value="3" onClick={this.handleClick}>Three</li>
         </ul>
-        <h1>
-          { message }
-        </h1>
+        <div>
+          <h1>{ message }</h1>
+        </div>
       </div>
     )
   }
