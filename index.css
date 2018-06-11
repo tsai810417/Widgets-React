@@ -23,3 +23,16 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+#tabs-select > li {
+  margin: 10px;
+  border: 1px solid #000000;
+}
+
+#tabs-widget > div {
+  margin: 20px;
+}
+
+#tabs-widget > div > h1{
+  text-align: center;
+}
