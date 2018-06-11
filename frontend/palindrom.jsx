@@ -6,6 +6,7 @@ class PalindromWiget extends React.Component {
       str: '',
       result: ''
     });
+    this.handleInput = this.handleInput.bind(this);
   }
 
   palindrom(str) {
@@ -18,6 +19,11 @@ class PalindromWiget extends React.Component {
       i += 1;
     }
     return true;
+  }
+  handleInput(e) {
+    this.setState({
+      str: e.currentTarget.value
+    })
   }
   }
 }
