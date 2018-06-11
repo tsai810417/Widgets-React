@@ -40,6 +40,17 @@ class PalindromWiget extends React.Component {
       str: e.currentTarget.value
     })
   }
+
+  render(){
+
+    return(
+      <div>
+        <h1>Palindrom Tester</h1>
+        <input type='text' onChange={this.handleInput}></input>
+        <button onClick={this.handleSubmit}>Check</button>
+        <p>{this.state.result}</p>
+      </div>
+    )
   }
 }
 
