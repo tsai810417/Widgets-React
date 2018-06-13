@@ -1,5 +1,5 @@
 import React from 'react';
-class WeatherWigit{
+class WeatherWigit extends React.Component {
 }
 
 export default WeatherWigit;
