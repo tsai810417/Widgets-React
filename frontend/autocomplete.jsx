@@ -6,7 +6,11 @@ class AutocompleteWidget extends React.Componenet {
   }
 
   render(){
+    return (
+      <div>
 
+      </div>
+    )
   }
 }
 
