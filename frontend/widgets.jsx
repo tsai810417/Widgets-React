@@ -9,7 +9,7 @@ import AutocompleteWidget from './autocomplete';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
-  const names = ["Andy", "Brad", "Chris", "Dennis", "Elaine"];
+  const Names = ["Andy", "Brad", "Chris", "Dennis", "Elaine", "Sarah", "Xue"];
   ReactDOM.render(
     <div>
       <ClockWidget />
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <Tabs />
       <PalindromWiget />
       <WeatherWigit />
-      <AutocompleteWidget />
+      <AutocompleteWidget names={Names}/>
     </div>
     , root);
 })
