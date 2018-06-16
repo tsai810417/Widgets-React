@@ -9,9 +9,14 @@ class AutocompleteWidget extends React.Component {
   }
 
   render(){
+    let i = 0;
     return (
       <div>
-
+        <ul>
+          { this.props.names.forEach( el => {
+            return <li>{ el }</li>
+          })}
+        </ul>
       </div>
     )
   }
