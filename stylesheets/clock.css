@@ -1,0 +1,17 @@
+#clock-widget {
+  margin: 15px;
+}
+
+#clock-info {
+  background-color: lightblue;
+  height: auto;
+  padding:10px;
+}
+
+.clock-li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: bold;
+}
