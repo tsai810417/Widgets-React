@@ -31,9 +31,18 @@ class ClockWidget extends React.Component {
       <div id="clock-widget">
         <h1 className='title'>Clock</h1>
         <ul id="clock-info">
-          <li>Date: <p>{ day }, { date }</p></li>
-          <li>Time: <p>{ time }</p></li>
-          <li>Zone: <p>{ zone }</p></li>
+          <li className="clock-li">
+            <p>Date </p>
+            <p>{ day }, { date }</p>
+          </li>
+          <li className="clock-li">
+            <p>Time </p>
+            <p>{ time }</p>
+          </li>
+          <li className="clock-li">
+            <p>Zone </p>
+            <p>{ zone }</p>
+          </li>
         </ul>
       </div>
     )
