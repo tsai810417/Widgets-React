@@ -19,10 +19,15 @@ class CalculatorWidet extends React.Component{
   }
 
   handleClick(e){
-    this.setState({
-      num: this.state.num.toString() + e.target.innerHTML
-
-    });
+    if (this.state.num == 0) {
+      this.setState({
+        num: e.target.innerHTML
+      })
+    } else {
+      this.setState({
+        num: this.state.num.toString() + e.target.innerHTML
+      });
+    }
   }
 
   render(){
