@@ -11,6 +11,17 @@ class AlbumWidget extends React.Component {
   componentDidMount(){
     this.state.userInput = "";
   }
+  render(){
+    return(
+      <div>
+        <input
+          type='text'
+          onChange={this.handleInput}
+          value={this.state.userInput}>
+        </input>
+      </div>
+    )
+  }
 }
 
 export default AlbumWidget;
