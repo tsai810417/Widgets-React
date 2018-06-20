@@ -17,6 +17,12 @@ class AlbumWidget extends React.Component {
     this.setState({
       userInput: e.currentTarget.value
     })
+
+    fetch(`http://ws.audioscrobbler.com/2.0/?method=album.search&album=${this.state.userInput}&api_key=9b0cdcf446cc96dea3e747787ad23575&format=json`).then(result => {
+      console.log(result);
+    })
+  }
+
   render(){
     return(
       <div>
@@ -28,6 +34,8 @@ class AlbumWidget extends React.Component {
       </div>
     )
   }
+
+
 }
 
 export default AlbumWidget;
