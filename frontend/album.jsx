@@ -11,6 +11,10 @@ class AlbumWidget extends React.Component {
   componentDidMount(){
     this.state.userInput = "";
   }
+  handleInput(e){
+    this.setState({
+      userInput: e.currentTarget.value
+    })
   render(){
     return(
       <div>
