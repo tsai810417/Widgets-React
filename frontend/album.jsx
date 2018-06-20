@@ -34,6 +34,16 @@ class AlbumWidget extends React.Component {
           onChange={this.handleInput}
           value={this.state.userInput}>
         </input>
+
+        <table>
+          <tbody>
+            <tr>
+              <td>Album Name</td>
+              <td>Artist</td>
+            </tr>
+            {albumsIndex}
+            </tbody>
+        </table>
       </div>
     )
   }
