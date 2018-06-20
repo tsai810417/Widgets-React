@@ -27,6 +27,14 @@ class AlbumWidget extends React.Component {
   }
 
   render(){
+    const albumsIndex = this.state.albums.map((el, idx) => {
+      return(
+        <tr key={idx}>
+          <td>{el.name}</td>
+          <td>{el.artist}</td>
+        </tr>
+      )
+    });
     return(
       <div>
         <input
