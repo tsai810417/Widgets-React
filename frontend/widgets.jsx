@@ -6,6 +6,7 @@ import Tabs from './tabs';
 import PalindromWiget from './palindrom';
 // import WeatherWigit from './weather';
 import AutocompleteWidget from './autocomplete';
+import AlbumWidget from './album';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <Tabs />
       <PalindromWiget />
       <AutocompleteWidget names={Names}/>
+      <AlbumWidget />
     </div>
     , root);
 })
