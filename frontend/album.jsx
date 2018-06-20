@@ -14,12 +14,15 @@ class AlbumWidget extends React.Component {
   }
 
   handleInput(e){
+    if (e.currentTarget.value.length > 0) {
+      fetch(`http://ws.audioscrobbler.com/2.0/?method=album.search&album=${e.currentTarget.value}&api_key=9b0cdcf446cc96dea3e747787ad23575&format=json`).then(data => data.json()).then(data => {
+        this.setState({
+          albums: data.results.albummatches.album
+        })
+      })
+    }
     this.setState({
       userInput: e.currentTarget.value
-    })
-
-    fetch(`http://ws.audioscrobbler.com/2.0/?method=album.search&album=${this.state.userInput}&api_key=9b0cdcf446cc96dea3e747787ad23575&format=json`).then(result => {
-      console.log(result);
     })
   }
 
