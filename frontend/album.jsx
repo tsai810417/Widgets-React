@@ -7,6 +7,10 @@ class AlbumWidget extends React.Component {
       albums: []
     });
   }
+
+  componentDidMount(){
+    this.state.userInput = "";
+  }
 }
 
 export default AlbumWidget;
