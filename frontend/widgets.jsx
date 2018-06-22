@@ -7,6 +7,7 @@ import PalindromWiget from './palindrom';
 // import WeatherWigit from './weather';
 import AutocompleteWidget from './autocomplete';
 import AlbumWidget from './album';
+import ConvertorWiget from './convertor';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <CalculatorWidet />
       <Tabs />
       <PalindromWiget />
-      <AutocompleteWidget names={Names}/>
+      <AutocompleteWidget names={Names} />
       <AlbumWidget />
     </div>
     , root);
