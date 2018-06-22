@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
       <PalindromWiget />
       <AutocompleteWidget names={Names} />
       <AlbumWidget />
+      <ConvertorWiget accessKey='cadccb3938255940e0e26d68adbc780d
+' />
     </div>
     , root);
 })
