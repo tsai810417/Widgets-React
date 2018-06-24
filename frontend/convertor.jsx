@@ -23,6 +23,7 @@ class ConvertorWiget extends React.Component {
           <label>Amount:
             <input type='integer'></input>
           </label>
+          <input type='submit'>Check</input>
         </form>
 
       </div>
