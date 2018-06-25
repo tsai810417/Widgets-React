@@ -23,13 +23,22 @@ class ConvertorWiget extends React.Component {
       <div>
         <form>
           <label>From:
-            <input type='text'></input>
+            <input
+              value={this.state.curFrom}
+              onChange={this.update('curFrom')}>
+            </input>
           </label>
           <label>To:
-            <input type='text'></input>
+            <input
+              value={this.state.curTo}
+              onChange={this.update('curTo')}>
+            </input>
           </label>
           <label>Amount:
-            <input type='integer'></input>
+            <input
+              value={this.state.amountFrom}
+              onChange={this.update('amountFrom')}>
+            </input>
           </label>
           <input type='submit'>Check</input>
         </form>
