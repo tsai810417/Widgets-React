@@ -16,6 +16,9 @@ class ConvertorWiget extends React.Component {
       [field]: e.target.value
     });
   }
+
+  handleSubmit(e) {
+    //fetch API here
   }
 
   render(){
