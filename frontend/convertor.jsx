@@ -3,8 +3,8 @@ class ConvertorWiget extends React.Component {
   constructor(props){
     super(props);
     this.state = ({
-      amountFrom: '',
-      amountTo: '',
+      amountFrom: 0,
+      amountTo: 0,
       curFrom: '',
       curTo: ''
     });
