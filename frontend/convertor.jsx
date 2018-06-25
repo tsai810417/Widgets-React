@@ -8,6 +8,14 @@ class ConvertorWiget extends React.Component {
       curFrom: '',
       curTo: ''
     });
+    this.update = this.update.bind(this)
+  }
+
+  update(field) {
+    return e => this.setState({
+      [field]: e.target.value
+    });
+  }
   }
 
   render(){
