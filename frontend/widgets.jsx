@@ -12,6 +12,7 @@ import ConvertorWiget from './convertor';
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
   const Names = ["Andy", "Brad", "Chris", "Dennis", "Elaine", "Sarah", "Xue"];
+  const convertorAccess = 'cadccb3938255940e0e26d68adbc780d'
   ReactDOM.render(
     <div>
       <ClockWidget />
@@ -20,8 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <PalindromWiget />
       <AutocompleteWidget names={Names} />
       <AlbumWidget />
-      <ConvertorWiget accessKey='cadccb3938255940e0e26d68adbc780d
-' />
+      <ConvertorWiget accessKey={convertorAccess} />
     </div>
     , root);
 })
